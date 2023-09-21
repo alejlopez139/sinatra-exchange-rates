@@ -1,0 +1,13 @@
+<h1>Convert <%= @curr %> </h1>
+
+<p>Go <a href="/">back</a>.</p>
+
+<ul>
+<% @hash.each do |key, value|%>
+    <li>
+      <a href="/<%= @curr %>/<%= key %>">
+        Convert 1 <%= @curr %> to <%= key %>...
+      </a>
+    </li>
+    <% end %>
+</ul>    
